@@ -31,7 +31,7 @@ if choice=="Model":
         setup_df=pull()
         st.info("ML EXPERIMENT SETTINGS")
         st.dataframe(setup_df)
-        best_model=compare_models(include=['lr','svm','dt'])
+        best_model=compare_models(include=['lr','svm','dt'],exclude=['knn','nb','rbfsvm','gpc','mlp','ridge','rf','qda','ada','gbc','lda','et','xgboost','lightgbm','catboost'])
         compare_df=pull()
         st.info(" ML MODEL COMPARISON ")
         st.dataframe(compare_df)
