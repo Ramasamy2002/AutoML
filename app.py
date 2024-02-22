@@ -27,7 +27,7 @@ if choice=="Model":
     st.title("MODEL BUILDING")
     target=st.selectbox("select The target:",df.columns)
     if st.button("TRAIN MODEL"):
-        setup(df,target=target,)
+        setup(df,target=target)
         setup_df=pull()
         st.info("ML EXPERIMENT SETTINGS")
         st.dataframe(setup_df)
