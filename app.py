@@ -6,7 +6,9 @@ import ydata_profiling
 from streamlit_pandas_profiling import st_profile_report
 from pycaret.classification import setup,compare_models,pull,save_model
 with st.sidebar:
+    st.image("https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/225/744/datas/gallery.jpg")
     st.title("AUTO ML")
+
     choice=st.radio("navigation",["Upload","Profiling","Model","Download"])
 if os.path.exists("source.csv"):
     df=pd.read_csv("source.csv",index_col=None)
